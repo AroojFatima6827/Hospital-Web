@@ -377,14 +377,14 @@ function Home() {
                     label="Doctor"
                     value={doctor}
                     onChange={setDoctor}
-                    options={["Dr Ali", "Dr Ahmed", "Dr Sarah"]}
+                    options={["Dr Adnan", "Dr Arsh", "Dr Muhammad"]}
                   />
 
                   <Dropdown
                     label="Department"
                     value={department}
                     onChange={setDepartment}
-                    options={["Cardiology", "Dental", "Skin", "Surgery"]}
+                    options={["Cardiology", "Dental", "Gastroenterology"]}
                   />
 
                   <textarea

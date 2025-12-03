@@ -7,7 +7,6 @@ import facebook from "../assets/fb.png";
 import Doctorimgone from "../assets/DoctorImgOne.png";
 import Doctorimgtwo from "../assets/DoctorImgTwo.png";
 import Doctorimgthree from "../assets/DoctorImgThree.png";
-import testimonial from "../assets/Testimonials.png";
 import Email from "../assets/EmailIcon.png";
 import Callicon from "../assets/CallIcon.svg";
 import Locationicon from "../assets/LocationIcon.svg";
