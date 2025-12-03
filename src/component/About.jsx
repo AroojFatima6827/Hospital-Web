@@ -110,34 +110,8 @@ function About() {
           </div>
 
           
-          {/* <div
-  className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-center bg-cover bg-no-repeat mt-15"
-  style={{ backgroundImage: `url(${sethscope})` }}
->
-  
-  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white bg-[rgba(14,78,63,0.7)] p-4 sm:p-6 lg:text-3xl rounded w-[90%] max-w-[350px]">
-    <p className="mb-2 text-sm sm:text-base lg:text-2xl">
-      “{testimonials[currentIndex].quote}”
-    </p>
-    <p className="text-xs sm:text-sm font-semibold">
-      — {testimonials[currentIndex].name}
-    </p>
-  </div>
-
- 
-  <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 sm:gap-4">
-    {testimonials.map((_, index) => (
-      <span
-        key={index}
-        className={`w-3 h-3 rounded-full cursor-pointer ${
-          currentIndex === index ? "bg-[rgb(14,78,63)]" : "bg-gray-400"
-        }`}
-        onClick={() => setCurrentIndex(index)}
-      ></span>
-    ))}
-  </div>
-</div> */}
-<div
+          
+{/* <div
   className="
     relative 
     w-full 
@@ -155,10 +129,10 @@ function About() {
     backgroundImage: `url(${sethscope})`,
   }}
 >
-  {/* DARK OVERLAY (so text stays readable) */}
+  
   <div className="absolute inset-0 bg-[rgba(14,78,63,0.45)]"></div>
 
-  {/* CENTERED TEXT */}
+  
   <div
     className="
       absolute top-1/2 left-1/2 
@@ -178,7 +152,7 @@ function About() {
     </p>
   </div>
 
-  {/* DOTS */}
+  
   <div
     className="
       absolute 
@@ -199,7 +173,43 @@ function About() {
       ></span>
     ))}
   </div>
+</div> */}
+<div
+  className="relative w-full h-[300px] sm:h-[380px] md:h-[480px] lg:h-[580px] overflow-hidden mt-10"
+  style={{
+    backgroundImage: `url(${sethscope})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Centered Testimonial Box */}
+  <div
+    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+    text-center text-white bg-[rgba(14,78,63,0.75)]
+    p-4 sm:p-6 rounded-lg w-[92%] max-w-[340px]"
+  >
+    <p className="mb-2 text-sm sm:text-base lg:text-xl leading-relaxed">
+      “{testimonials[currentIndex].quote}”
+    </p>
+    <p className="text-xs sm:text-sm font-semibold mt-1">
+      — {testimonials[currentIndex].name}
+    </p>
+  </div>
+
+  {/* Bottom Navigation Dots */}
+  <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+    {testimonials.map((_, index) => (
+      <span
+        key={index}
+        className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+          currentIndex === index ? "bg-[rgb(14,78,63)]" : "bg-gray-300"
+        }`}
+        onClick={() => setCurrentIndex(index)}
+      ></span>
+    ))}
+  </div>
 </div>
+
 
           <div className="Doctors-profile mt-10">
             <p className="text-center text-2xl lg:text-3xl">Trusted Care</p>
