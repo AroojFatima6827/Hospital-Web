@@ -53,8 +53,8 @@ function Appointment() {
           <input value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="Phone" required className="p-2 rounded bg-white w-full"/>
           <DatePicker selected={date} onChange={(d)=>setDate(d)} placeholderText="Select Date" className="p-2 rounded bg-white w-full"/>
           <DatePicker selected={time} onChange={(t)=>setTime(t)} placeholderText="Select Time" showTimeSelect showTimeSelectOnly timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" className="p-2 rounded bg-white w-full"/>
-          <Dropdown label="Doctor" value={doctor} onChange={setDoctor} options={["Dr Ali","Dr Ahmed","Dr Sarah"]}/>
-          <Dropdown label="Department" value={department} onChange={setDepartment} options={["Cardiology","Dental","Skin","Surgery"]}/>
+          <Dropdown label="Doctor" value={doctor} onChange={setDoctor} options={["Dr Adnan","Dr Arsh","Dr Muhammad"]}/>
+          <Dropdown label="Department" value={department} onChange={setDepartment} options={["Cardiology","Dental","Gastroenterology"]}/>
           <textarea value={message} onChange={(e)=>setMessage(e.target.value)} placeholder="Message" className="p-2 rounded bg-white w-full md:col-span-2"/>
           <button type="submit" className="bg-[#2ee6c8] text-black py-2 font-semibold rounded md:col-span-2">SUBMIT</button>
           {success && <p className="text-center text-white md:col-span-2">Form submitted successfully!</p>}
