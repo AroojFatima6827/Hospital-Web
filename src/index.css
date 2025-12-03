@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@media(width:344px){
+  .info-boxes{
+    gap:8px;
+  } 
+}
