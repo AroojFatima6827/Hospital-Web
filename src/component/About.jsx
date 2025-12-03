@@ -111,7 +111,7 @@ function About() {
 
           
           
-{/* <div
+<div
   className="
     relative 
     w-full 
@@ -170,41 +170,6 @@ function About() {
           w-3 h-3 rounded-full cursor-pointer 
           ${currentIndex === index ? "bg-[rgb(14,78,63)]" : "bg-gray-300"}
         `}
-      ></span>
-    ))}
-  </div>
-</div> */}
-<div
-  className="relative w-full h-[300px] sm:h-[380px] md:h-[480px] lg:h-[580px] overflow-hidden mt-10"
-  style={{
-    backgroundImage: `url(${sethscope})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Centered Testimonial Box */}
-  <div
-    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-    text-center text-white bg-[rgba(14,78,63,0.75)]
-    p-4 sm:p-6 rounded-lg w-[92%] max-w-[340px]"
-  >
-    <p className="mb-2 text-sm sm:text-base lg:text-xl leading-relaxed">
-      “{testimonials[currentIndex].quote}”
-    </p>
-    <p className="text-xs sm:text-sm font-semibold mt-1">
-      — {testimonials[currentIndex].name}
-    </p>
-  </div>
-
-  {/* Bottom Navigation Dots */}
-  <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
-    {testimonials.map((_, index) => (
-      <span
-        key={index}
-        className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-          currentIndex === index ? "bg-[rgb(14,78,63)]" : "bg-gray-300"
-        }`}
-        onClick={() => setCurrentIndex(index)}
       ></span>
     ))}
   </div>
