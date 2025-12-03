@@ -109,31 +109,34 @@ function About() {
             </div>
           </div>
 
+          
           <div
-            className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-center bg-cover bg-no-repeat mt-15"
-            style={{ backgroundImage: `url(${sethscope})` }}
-          >
-            {/* Centered testimonial */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white bg-[rgba(14,78,63,0.7)] p-4 sm:p-6 lg:text-3xl rounded w-[90%]">
-              <p className="mb-2">“{testimonials[currentIndex].quote}”</p>
-              <p className="text-sm font-semibold">
-                — {testimonials[currentIndex].name}
-              </p>
-            </div>
+  className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-center bg-cover bg-no-repeat mt-15"
+  style={{ backgroundImage: `url(${sethscope})` }}
+>
+  {/* Centered testimonial */}
+  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white bg-[rgba(14,78,63,0.7)] p-4 sm:p-6 lg:text-3xl rounded w-[90%] max-w-[350px]">
+    <p className="mb-2 text-sm sm:text-base lg:text-2xl">
+      “{testimonials[currentIndex].quote}”
+    </p>
+    <p className="text-xs sm:text-sm font-semibold">
+      — {testimonials[currentIndex].name}
+    </p>
+  </div>
 
-            {/* Navigation dots */}
-            <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 sm:gap-4">
-              {testimonials.map((_, index) => (
-                <span
-                  key={index}
-                  className={`w-3 h-3 rounded-full cursor-pointer ${
-                    currentIndex === index ? "bg-white" : "bg-gray-400"
-                  }`}
-                  onClick={() => setCurrentIndex(index)}
-                ></span>
-              ))}
-            </div>
-          </div>
+  {/* Navigation dots */}
+  <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 sm:gap-4">
+    {testimonials.map((_, index) => (
+      <span
+        key={index}
+        className={`w-3 h-3 rounded-full cursor-pointer ${
+          currentIndex === index ? "bg-[rgb(14,78,63)]" : "bg-gray-400"
+        }`}
+        onClick={() => setCurrentIndex(index)}
+      ></span>
+    ))}
+  </div>
+</div>
           <div className="Doctors-profile mt-10">
             <p className="text-center text-2xl lg:text-3xl">Trusted Care</p>
             <h1 className="text-center text-3xl font-bold mt-2 lg:text-4xl">

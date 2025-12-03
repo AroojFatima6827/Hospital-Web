@@ -30,7 +30,7 @@ function Layout() {
             </h1>
 
             {/* Info Boxes */}
-            <div className="info-boxes flex flex-wrap md:flex-nowrap gap-6 items-center justify-center md:justify-end">
+            <div className="info-boxes flex flex-wrap md:flex-nowrap gap-2 items-center justify-center md:justify-end">
               {/* Emergency */}
               <div className="call-emergency flex items-center">
                 <img
